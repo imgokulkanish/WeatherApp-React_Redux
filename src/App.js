@@ -79,7 +79,7 @@ function App() {
                     </h1>{" "}
                   </div>
                   <h1 class="text-black-300 text-center text-4xl mb-10">
-                    {(Number(weather?.main.temp))}{" "}
+                    {((weather?.main.temp))}{" "}
                     <span class="text-yellow-500 text-4xl">°C</span>
                   </h1>
                   <h3 class="mb-6 text-xl text-white font-semibold">
@@ -89,7 +89,7 @@ function App() {
                     The weather condition in {weather?.name},{" "}
                     {weather?.sys?.country} is described as :{" "}
                     {weather?.weather[0].description} with a temperature of{" "}
-                    {(Number(weather?.main.temp))} °C and a humidity of{" "}
+                    {((weather?.main.temp))} °C and a humidity of{" "}
                     {weather?.main?.humidity} %
                   </p>
                   <a
