@@ -89,7 +89,7 @@ function App() {
                     The weather condition in {weather?.name},{" "}
                     {weather?.sys?.country} is described as :{" "}
                     {weather?.weather[0].description} with a temperature of{" "}
-                    {Math.ceil(Number(weather?.main.temp))} °C and a humidity of{" "}
+                    {(Number(weather?.main.temp))} °C and a humidity of{" "}
                     {weather?.main?.humidity} %
                   </p>
                   <a
